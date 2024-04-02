@@ -3,13 +3,7 @@
 This Python script is designed to automatically open a web browser and display a specific webpage on a Raspberry Pi upon boot. It utilizes the `webbrowser` and `pyautogui` libraries to achieve this functionality.
 
 ## Prerequisites
-
-- Python 3.x installed on your Raspberry Pi.
-- Ensure both `webbrowser` and `pyautogui` libraries are installed. You can install them using pip:
-
-```bash
-pip install webbrowser pyautogui
-```
+no prerequisites
 
 ## Usage
 
@@ -30,16 +24,16 @@ crontab -e
 2. Add the following line to the crontab file to run the script on boot:
 
 ```bash
-@reboot python3 /path/to/open_browser.py
+@reboot bash -m -l /home/<user-name>/announcements-rpi-automation/file.sh
 ```
 
-Replace `/path/to/open_browser.py` with the actual path to your script.
+Replace `/path/to/file.sh` with the actual path to your script.
 
 3. Save and exit the crontab file.
 
 ## Script Explanation
 
-The script `open_browser.py` consists of the following functions:
+The script `file.sh` consists of the following functions:
 
 - `open_browser(url)`: This function takes a URL as input and opens it in a web browser. It then waits for the browser to open, gets the screen dimensions, and maximizes the browser window to full screen using keyboard shortcuts.
 
