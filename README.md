@@ -1,10 +1,15 @@
 # Raspberry Pi Web Browser Auto-Launch
 
-This Python script is designed to automatically open a web browser and display a specific webpage on a Raspberry Pi upon boot. It utilizes the `webbrowser` and `pyautogui` libraries to achieve this functionality.
-
+This basg script is designed to automatically open a web browser and display a specific webpage on a Raspberry Pi upon boot.
+# Background
+I tried this in python
+It will generate a lot of errors and take lot of time
+It will also give you lot of library errors
+So, avoid in python
+Use .bash shell it is neater
 ## Prerequisites
-no prerequisites
-
+chromium-browser has to be installed 
+which is on default on most of default builds
 ## Usage
 
 1. Edit the `url` variable in the script to specify the webpage you want to open.
