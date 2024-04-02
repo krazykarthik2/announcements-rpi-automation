@@ -1,8 +1,0 @@
-# Ignore the venv directory
-venv/
-
-# Ignore any bytecode files
-*.pyc
-
-# Ignore any temporary files
-*.tmp
